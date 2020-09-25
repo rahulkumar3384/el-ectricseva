@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(143, 52, 196);
+        }
+
+        ::placeholder {
+            text-align: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            color: gray;
+            font-size: 16px;
+            animation: rahul 2s ease-in-out 0.5s 12 forwards;
+
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            height: 600px;
+            background-color:whitesmoke;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            top: 35px;
+            
+        }
+
+        .test {
+            padding: 15px 5px;
+        }
+
+        input[type=text] {
+            width: 20em;
+            height: 3.3em;
+            font-size: 14px;
+            border: none;
+            color: black;
+            background-color: rgb(224, 224, 224);
+            border-radius: 50px;
+            animation: rahul 2s ease-in-out 0.5s 1 forwards;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        input[type=password] {
+            width: 20em;
+            height: 3.3em;
+            font-size: 14px;
+            border: none;
+            color: black;
+            background-color: rgb(224, 224, 224);
+            border-radius: 50px;
+            font-family: 'Roboto', sans-serif;
+            animation: rahul 2s ease-in-out 0.5s 1 forwards;
+
+        }
+    
+
+        .firstname {
+            padding-bottom: 10px;
+        }
+
+        input[type=submit] {
+            width: 20em;
+            height: 3.3em;
+            font-size: 14px;
+            background-color: rgb(29, 202, 43);
+            color: white;
+            border-radius: 50px;
+            font-family: 'Roboto', sans-serif;
+            border: none;
+            animation: rahul 2s ease-in-out 0.5s 1 forwards;
+
+        }
+
+        input[type=text]:focus {
+            outline: none;
+            text-align: center;
+        }
+
+        input[type=password]:focus {
+            outline: none;
+            text-align: center;}
+            h2{
+                padding-bottom: 15px;
+                color: black;
+            }
+            a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer;
+
+}
+input[type=submit]:hover {
+    background-color: green;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+
+            <form action="backend.php">
+                
+                
+                    <h2> Welcome! to Homestie!</h2>
+                <div class="firstname">
+                    <label for="first"> </label>
+                    <input type="text" name="myFirstName" id="first" placeholder="First Name">
+                </div>
+                <div class="test lastname">
+                    <label for="last"> </label>
+                    <input type="text" name="myLastName" id="last" placeholder="Last Name">
+                </div>
+                <div class="test phoneno">
+                    <label for="phone"> </label>
+                    <input type="text" name="myNumber" id=" last" placeholder="Phone Number">
+                </div>
+                <div class="test emailid">
+                    <label for="emailid"> </label>
+                    <input type="text" name="myId" id=" last" placeholder="Email Id">
+                </div>
+                <div class="test pass">
+                    <label for="password"> </label>
+                    <input type="password" name="myPassword" id="password" placeholder="Password">
+                </div>
+                <div class="test confirmpass">
+                    <label for="password2"> </label>
+                    <input type="password" name="myPassword2" id="password2" placeholder="Confirm Password">
+                </div>
+
+                <div class="test submit">
+                    <input type="submit" value="Sign up">
+                </div>
+                <div class="create">
+                    <a href="loginpage.html">Already have an account! &#10145; </a>
+                </div>
+                
+            </form>
+        
+    </header>
+
+</body>
+
+</html>
